@@ -1,0 +1,440 @@
+
+-- ----------------------------------------------------------------------------------- REFERENCES
+
+-- Insert data into Ref_UniGroup
+INSERT INTO Ref_UniGroup (Id, Desc) VALUES (0, 'All');
+INSERT INTO Ref_UniGroup (Id, Desc) VALUES (1, 'Go8');
+INSERT INTO Ref_UniGroup (Id, Desc) VALUES (2, 'IRU');
+INSERT INTO Ref_UniGroup (Id, Desc) VALUES (3, 'ATN');
+INSERT INTO Ref_UniGroup (Id, Desc) VALUES (4, 'RUN');
+
+-- Insert data into Ref_State
+INSERT INTO Ref_State (Id, Desc) VALUES (0, '?');
+INSERT INTO Ref_State (Id, Desc) VALUES (1, 'NSW');
+INSERT INTO Ref_State (Id, Desc) VALUES (2, 'ACT/NT');
+INSERT INTO Ref_State (Id, Desc) VALUES (3, 'VIC');
+INSERT INTO Ref_State (Id, Desc) VALUES (4, 'QLD');
+INSERT INTO Ref_State (Id, Desc) VALUES (5, 'SA');
+INSERT INTO Ref_State (Id, Desc) VALUES (6, 'WA');
+INSERT INTO Ref_State (Id, Desc) VALUES (7, 'TAS');
+INSERT INTO Ref_State (Id, Desc) VALUES (8, 'NZ');
+INSERT INTO Ref_State (Id, Desc) VALUES (9, 'All');
+
+-- Insert data into Ref_StudyLevel
+INSERT INTO Ref_StudyLevel (Id, Desc) VALUES (1, 'VE');
+INSERT INTO Ref_StudyLevel (Id, Desc) VALUES (2, 'Prep');
+INSERT INTO Ref_StudyLevel (Id, Desc) VALUES (3, 'UGrad');
+INSERT INTO Ref_StudyLevel (Id, Desc) VALUES (4, 'PGrad');
+INSERT INTO Ref_StudyLevel (Id, Desc) VALUES (5, 'RHD');
+
+-- Insert data into Ref_StudyAreaQILT
+INSERT INTO Ref_StudyAreaQILT (Id, Desc) VALUES (1, 'Science and Mathematics');
+INSERT INTO Ref_StudyAreaQILT (Id, Desc) VALUES (2, 'Computing and Information Systems');
+INSERT INTO Ref_StudyAreaQILT (Id, Desc) VALUES (3, 'Engineering');
+INSERT INTO Ref_StudyAreaQILT (Id, Desc) VALUES (4, 'Architecture and Building');
+INSERT INTO Ref_StudyAreaQILT (Id, Desc) VALUES (5, 'Agriculture and Environmental Studies');
+INSERT INTO Ref_StudyAreaQILT (Id, Desc) VALUES (6, 'Health Services and Support');
+INSERT INTO Ref_StudyAreaQILT (Id, Desc) VALUES (7, 'Medicine');
+INSERT INTO Ref_StudyAreaQILT (Id, Desc) VALUES (8, 'Nursing');
+INSERT INTO Ref_StudyAreaQILT (Id, Desc) VALUES (9, 'Pharmacy');
+INSERT INTO Ref_StudyAreaQILT (Id, Desc) VALUES (10, 'Dentistry');
+INSERT INTO Ref_StudyAreaQILT (Id, Desc) VALUES (11, 'Veterinary Science');
+INSERT INTO Ref_StudyAreaQILT (Id, Desc) VALUES (12, 'Rehabilitation');
+INSERT INTO Ref_StudyAreaQILT (Id, Desc) VALUES (13, 'Teacher Education');
+INSERT INTO Ref_StudyAreaQILT (Id, Desc) VALUES (14, 'Business and Management');
+INSERT INTO Ref_StudyAreaQILT (Id, Desc) VALUES (15, 'Humanities; Culture and Social Sciences');
+INSERT INTO Ref_StudyAreaQILT (Id, Desc) VALUES (16, 'Social Work');
+INSERT INTO Ref_StudyAreaQILT (Id, Desc) VALUES (17, 'Psychology');
+INSERT INTO Ref_StudyAreaQILT (Id, Desc) VALUES (18, 'Law and Paralegal Studies');
+INSERT INTO Ref_StudyAreaQILT (Id, Desc) VALUES (19, 'Creative Arts');
+INSERT INTO Ref_StudyAreaQILT (Id, Desc) VALUES (20, 'Communications');
+INSERT INTO Ref_StudyAreaQILT (Id, Desc) VALUES (21, 'Tourism, Hospitality, Personal Services, Sport and Recreation');
+
+-- Insert data into Ref_StudyAreaFaculty
+INSERT INTO Ref_StudyAreaFaculty (Id, Desc) VALUES (1, 'Science');
+INSERT INTO Ref_StudyAreaFaculty (Id, Desc) VALUES (2, 'Engineering');
+INSERT INTO Ref_StudyAreaFaculty (Id, Desc) VALUES (3, 'Health');
+INSERT INTO Ref_StudyAreaFaculty (Id, Desc) VALUES (4, 'Education');
+INSERT INTO Ref_StudyAreaFaculty (Id, Desc) VALUES (5, 'Commerce');
+INSERT INTO Ref_StudyAreaFaculty (Id, Desc) VALUES (6, 'Humanities');
+
+-- Insert data into Ref_StudyAreaDiscipline
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (1, 'Mathematical Sciences');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (2, 'Physics and Astronomy');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (3, 'Chemical Sciences');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (4, 'Earth Sciences');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (5, 'Biological Sciences');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (6, 'Other Natural and Physical Sciences');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (7, 'Computer Science');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (8, 'Information Systems');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (9, 'Other Information Technology');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (10, 'Manufacturing Engineering and Technology');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (11, 'Process and Resources Engineering');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (12, 'Automotive Engineering and Technology');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (13, 'Mechanical/Industrial Engineering & Technology');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (14, 'Civil Engineering');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (15, 'Geomatic Engineering');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (16, 'Electrical/Electronic Engineering & Technology');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (17, 'Aerospace Engineering and Technology');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (18, 'Maritime Engineering and Technology');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (19, 'Other Engineering and Related Technologies');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (20, 'Architecture and Urban Environment');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (21, 'Building');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (22, 'Agriculture');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (23, 'Horticulture and Viticulture');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (24, 'Forestry Studies');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (25, 'Fisheries Studies');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (26, 'Environmental Studies');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (27, 'Other Agriculture, Environment/Related Studies');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (28, 'Medical Studies');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (29, 'Nursing');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (30, 'Pharmacy');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (31, 'Dental Studies');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (32, 'Optical Science');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (33, 'Veterinary Studies');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (34, 'Public Health');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (35, 'Radiography');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (36, 'Rehabilitation Therapies');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (37, 'Complementary Therapies');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (38, 'Other Health');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (39, 'Teacher Education');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (40, 'Curriculum and Education Studies');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (41, 'Other Education');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (42, 'Accounting');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (43, 'Business and Management');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (44, 'Sales and Marketing');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (45, 'Tourism');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (46, 'Office Studies');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (47, 'Banking, Finance and Related Fields');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (48, 'Other Management and Commerce');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (49, 'Political Science and Policy Studies');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (50, 'Studies in Human Society');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (51, 'Human Welfare Studies and Services');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (52, 'Behavioural Science');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (53, 'Law');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (54, 'Justice and Law Enforcement');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (55, 'Librarianship, Information Mgt & Curatorial Studies');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (56, 'Language and Literature');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (57, 'Philosophy and Religious Studies');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (58, 'Economics and Econometrics');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (59, 'Sport and Recreation');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (60, 'Other Society and Culture');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (61, 'Performing Arts');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (62, 'Visual Arts and Crafts');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (63, 'Graphic and Design Studies');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (64, 'Communication and Media Studies');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (65, 'Other Creative Arts');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (66, 'Food and Hospitality');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (67, 'Personal Services');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (68, 'General Education Programmes');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (69, 'Social Skills Programmes');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (70, 'Employment Skills Programmes');
+INSERT INTO Ref_StudyAreaDiscipline (Id, Desc) VALUES (71, 'Other Mixed Field Programmes');
+
+-- Insert data into Ref_YearOfProgram
+INSERT INTO Ref_YearOfProgram (Id, Desc) VALUES (0, 'Unknown');
+INSERT INTO Ref_YearOfProgram (Id, Desc) VALUES (1, '1st Year');
+INSERT INTO Ref_YearOfProgram (Id, Desc) VALUES (2, '2nd Year');
+INSERT INTO Ref_YearOfProgram (Id, Desc) VALUES (3, '3rd Year');
+INSERT INTO Ref_YearOfProgram (Id, Desc) VALUES (4, 'Complete');
+INSERT INTO Ref_YearOfProgram (Id, Desc) VALUES (5, 'Withdrawn');
+
+-- Insert data into Ref_StudyMode
+INSERT INTO Ref_StudyMode (Id, Desc) VALUES (0, 'Unknown');
+INSERT INTO Ref_StudyMode (Id, Desc) VALUES (1, 'Full time');
+INSERT INTO Ref_StudyMode (Id, Desc) VALUES (2, 'Part time');
+
+-- Insert data into Ref_CampusType
+INSERT INTO Ref_CampusType (Id, Desc) VALUES (0, 'Unknown');
+INSERT INTO Ref_CampusType (Id, Desc) VALUES (1, 'Metropolitan');
+INSERT INTO Ref_CampusType (Id, Desc) VALUES (2, 'Regional');
+INSERT INTO Ref_CampusType (Id, Desc) VALUES (3, 'Offshore');
+
+-- Insert data into Ref_StudentType
+INSERT INTO Ref_StudentType (Id, Desc) VALUES (0, 'Unknown');
+INSERT INTO Ref_StudentType (Id, Desc) VALUES (1, 'Domestic');
+INSERT INTO Ref_StudentType (Id, Desc) VALUES (2, 'International');
+
+-- Insert data into Ref_Gender
+INSERT INTO Ref_Gender (Id, Desc) VALUES (0, 'Unknown');
+INSERT INTO Ref_Gender (Id, Desc) VALUES (1, 'Male');
+INSERT INTO Ref_Gender (Id, Desc) VALUES (2, 'Female');
+INSERT INTO Ref_Gender (Id, Desc) VALUES (3, 'Other');
+
+-- ----------------------------------------------------------------------------------- CR_FRAMEWORK
+
+-- Insert data into ExportYear;
+INSERT INTO ExportYear (Year) VALUES (2026);
+
+-- Insert data into Mode
+INSERT INTO Mode (Mode) VALUES ('1217');
+
+-- Insert data into Ques
+INSERT INTO Ques (Id, Desc) VALUES (1, 'What stage are you at in your career planning?');
+INSERT INTO Ques (Id, Desc) VALUES (2, 'Select all statements that apply from the following options regarding experiences you have undertaken in the last 12 months.');
+
+-- Insert data into Stage;
+INSERT INTO Stage (Ques, Stage, Desc) VALUES (1, 1, 'Decide');
+INSERT INTO Stage (Ques, Stage, Desc) VALUES (1, 2, 'Plan');
+INSERT INTO Stage (Ques, Stage, Desc) VALUES (1, 3, 'Action');
+INSERT INTO Stage (Ques, Stage, Desc) VALUES (1, 4, 'Sorted');
+INSERT INTO Stage (Ques, Stage, Desc) VALUES (2, 1, 'Nil');
+INSERT INTO Stage (Ques, Stage, Desc) VALUES (2, 2, 'Unrelated');
+INSERT INTO Stage (Ques, Stage, Desc) VALUES (2, 3, 'Related');
+INSERT INTO Stage (Ques, Stage, Desc) VALUES (2, 4, 'Sorted');
+
+-- Insert data into Resonse;
+INSERT INTO Response (Ques, Response, Desc) VALUES (1, 1, 'I am not ready to start thinking about my career');
+INSERT INTO Response (Ques, Response, Desc) VALUES (1, 2, 'It is too early for me to start thinking about my career');
+INSERT INTO Response (Ques, Response, Desc) VALUES (1, 3, 'I have not thought about my preferred career but I know I need to');
+INSERT INTO Response (Ques, Response, Desc) VALUES (1, 4, 'I thought I knew what I wanted to do but now I am not so sure');
+INSERT INTO Response (Ques, Response, Desc) VALUES (1, 5, 'I have some ideas about my career but want to find out more');
+INSERT INTO Response (Ques, Response, Desc) VALUES (1, 6, 'I have ideas about my career but am unsure where to begin');
+INSERT INTO Response (Ques, Response, Desc) VALUES (1, 7, 'I have ideas about my career and have started working towards these');
+INSERT INTO Response (Ques, Response, Desc) VALUES (1, 8, 'I have ideas about my career and am on track to achieve these');
+INSERT INTO Response (Ques, Response, Desc) VALUES (1, 9, 'I want to begin applying for employment in my preferred career');
+INSERT INTO Response (Ques, Response, Desc) VALUES (1, 10, 'I am currently applying for employment in my preferred career');
+INSERT INTO Response (Ques, Response, Desc) VALUES (1, 11, 'I am planning to start my own business related to my preferred career');
+INSERT INTO Response (Ques, Response, Desc) VALUES (1, 12, 'I am planning to undertake further study');
+INSERT INTO Response (Ques, Response, Desc) VALUES (1, 13, 'I have secured employment related to my career');
+INSERT INTO Response (Ques, Response, Desc) VALUES (1, 14, 'I have started my own business related to my career');
+INSERT INTO Response (Ques, Response, Desc) VALUES (1, 15, 'I have secured a place in further study');
+INSERT INTO Response (Ques, Response, Desc) VALUES (1, 16, 'I am pursuing my current course out of personal interest');
+INSERT INTO Response (Ques, Response, Desc) VALUES (2, 1, 'No Experience to date');
+INSERT INTO Response (Ques, Response, Desc) VALUES (2, 2, 'Work less than a year');
+INSERT INTO Response (Ques, Response, Desc) VALUES (2, 3, 'Volunteering');
+INSERT INTO Response (Ques, Response, Desc) VALUES (2, 4, 'A position in a club or society');
+INSERT INTO Response (Ques, Response, Desc) VALUES (2, 5, 'Work shadowing');
+INSERT INTO Response (Ques, Response, Desc) VALUES (2, 6, 'Part time/casual work (unrelated to studies)');
+INSERT INTO Response (Ques, Response, Desc) VALUES (2, 7, 'Part time/casual work (related to studies)');
+INSERT INTO Response (Ques, Response, Desc) VALUES (2, 8, 'Currently working full time (related to studies)');
+INSERT INTO Response (Ques, Response, Desc) VALUES (2, 9, 'Industry project related to program');
+INSERT INTO Response (Ques, Response, Desc) VALUES (2, 10, 'Full time work prior to studies');
+INSERT INTO Response (Ques, Response, Desc) VALUES (2, 11, 'Engaged in a mentoring program');
+INSERT INTO Response (Ques, Response, Desc) VALUES (2, 12, 'Work placement during studies');
+INSERT INTO Response (Ques, Response, Desc) VALUES (2, 13, 'Self-employment');
+
+-- Insert data into Uni
+INSERT INTO Uni (UniId, Name, UniGroup, State) VALUES (1217, 'GCA University', 1, 4);
+
+
+-- ----------------------------------------------------------------------------------- CR_DATA
+
+-- Insert data into CR_Student
+INSERT INTO CR_Student (UniId, Student, StudyLevel, StudyAreaQILT, StudyAreaFaculty, StudyAreaDiscipline, CohortYear, CreditsTotal, CreditsThisYear, CreditsPriorYears, YearOfProgram, StudyMode, CampusType, StudentType, Gender) VALUES (1217,3437848,3,14,5,42,2019,300,100,0,9,0,1,1,1);
+INSERT INTO CR_Student (UniId, Student, StudyLevel, StudyAreaQILT, StudyAreaFaculty, StudyAreaDiscipline, CohortYear, CreditsTotal, CreditsThisYear, CreditsPriorYears, YearOfProgram, StudyMode, CampusType, StudentType, Gender) VALUES (1217,3302519,3,14,5,42,2019,300,50,0,9,0,1,2,1);
+INSERT INTO CR_Student (UniId, Student, StudyLevel, StudyAreaQILT, StudyAreaFaculty, StudyAreaDiscipline, CohortYear, CreditsTotal, CreditsThisYear, CreditsPriorYears, YearOfProgram, StudyMode, CampusType, StudentType, Gender) VALUES (1217,1387247,3,14,5,42,2019,400,100,0,9,0,1,1,2);
+INSERT INTO CR_Student (UniId, Student, StudyLevel, StudyAreaQILT, StudyAreaFaculty, StudyAreaDiscipline, CohortYear, CreditsTotal, CreditsThisYear, CreditsPriorYears, YearOfProgram, StudyMode, CampusType, StudentType, Gender) VALUES (1217,3098330,3,14,5,42,2019,300,100,0,9,0,1,1,2);
+INSERT INTO CR_Student (UniId, Student, StudyLevel, StudyAreaQILT, StudyAreaFaculty, StudyAreaDiscipline, CohortYear, CreditsTotal, CreditsThisYear, CreditsPriorYears, YearOfProgram, StudyMode, CampusType, StudentType, Gender) VALUES (1217,1991307,3,14,5,42,2019,400,50,0,9,0,1,1,2);
+INSERT INTO CR_Student (UniId, Student, StudyLevel, StudyAreaQILT, StudyAreaFaculty, StudyAreaDiscipline, CohortYear, CreditsTotal, CreditsThisYear, CreditsPriorYears, YearOfProgram, StudyMode, CampusType, StudentType, Gender) VALUES (1217,1524413,3,19,6,61,2019,300,100,100,9,0,1,2,1);
+INSERT INTO CR_Student (UniId, Student, StudyLevel, StudyAreaQILT, StudyAreaFaculty, StudyAreaDiscipline, CohortYear, CreditsTotal, CreditsThisYear, CreditsPriorYears, YearOfProgram, StudyMode, CampusType, StudentType, Gender) VALUES (1217,4342499,3,3,2,13,2019,400,100,0,9,0,1,1,1);
+INSERT INTO CR_Student (UniId, Student, StudyLevel, StudyAreaQILT, StudyAreaFaculty, StudyAreaDiscipline, CohortYear, CreditsTotal, CreditsThisYear, CreditsPriorYears, YearOfProgram, StudyMode, CampusType, StudentType, Gender) VALUES (1217,4684144,3,3,2,13,2020,400,100,0,9,0,1,1,2);
+INSERT INTO CR_Student (UniId, Student, StudyLevel, StudyAreaQILT, StudyAreaFaculty, StudyAreaDiscipline, CohortYear, CreditsTotal, CreditsThisYear, CreditsPriorYears, YearOfProgram, StudyMode, CampusType, StudentType, Gender) VALUES (1217,0324031,3,3,2,13,2022,300,100,0,9,0,1,1,1);
+INSERT INTO CR_Student (UniId, Student, StudyLevel, StudyAreaQILT, StudyAreaFaculty, StudyAreaDiscipline, CohortYear, CreditsTotal, CreditsThisYear, CreditsPriorYears, YearOfProgram, StudyMode, CampusType, StudentType, Gender) VALUES (1217,2673114,3,2,2,8,2019,400,50,50,9,0,1,1,1);
+INSERT INTO CR_Student (UniId, Student, StudyLevel, StudyAreaQILT, StudyAreaFaculty, StudyAreaDiscipline, CohortYear, CreditsTotal, CreditsThisYear, CreditsPriorYears, YearOfProgram, StudyMode, CampusType, StudentType, Gender) VALUES (1217,3933199,3,6,3,34,2019,300,50,0,9,0,1,1,1);
+INSERT INTO CR_Student (UniId, Student, StudyLevel, StudyAreaQILT, StudyAreaFaculty, StudyAreaDiscipline, CohortYear, CreditsTotal, CreditsThisYear, CreditsPriorYears, YearOfProgram, StudyMode, CampusType, StudentType, Gender) VALUES (1217,1364506,3,2,2,8,2019,300,50,0,9,0,1,1,1);
+INSERT INTO CR_Student (UniId, Student, StudyLevel, StudyAreaQILT, StudyAreaFaculty, StudyAreaDiscipline, CohortYear, CreditsTotal, CreditsThisYear, CreditsPriorYears, YearOfProgram, StudyMode, CampusType, StudentType, Gender) VALUES (1217,2431346,3,1,1,2,2018,450,100,0,9,0,1,1,2);
+INSERT INTO CR_Student (UniId, Student, StudyLevel, StudyAreaQILT, StudyAreaFaculty, StudyAreaDiscipline, CohortYear, CreditsTotal, CreditsThisYear, CreditsPriorYears, YearOfProgram, StudyMode, CampusType, StudentType, Gender) VALUES (1217,2146646,3,1,1,2,2019,300,100,0,9,0,1,2,1);
+INSERT INTO CR_Student (UniId, Student, StudyLevel, StudyAreaQILT, StudyAreaFaculty, StudyAreaDiscipline, CohortYear, CreditsTotal, CreditsThisYear, CreditsPriorYears, YearOfProgram, StudyMode, CampusType, StudentType, Gender) VALUES (1217,3635688,3,1,1,2,2019,300,100,0,9,0,1,1,2);
+INSERT INTO CR_Student (UniId, Student, StudyLevel, StudyAreaQILT, StudyAreaFaculty, StudyAreaDiscipline, CohortYear, CreditsTotal, CreditsThisYear, CreditsPriorYears, YearOfProgram, StudyMode, CampusType, StudentType, Gender) VALUES (1217,4493970,3,1,1,2,2019,300,100,0,9,0,1,2,1);
+INSERT INTO CR_Student (UniId, Student, StudyLevel, StudyAreaQILT, StudyAreaFaculty, StudyAreaDiscipline, CohortYear, CreditsTotal, CreditsThisYear, CreditsPriorYears, YearOfProgram, StudyMode, CampusType, StudentType, Gender) VALUES (1217,3630889,3,1,1,2,2017,300,100,0,9,0,1,1,2);
+INSERT INTO CR_Student (UniId, Student, StudyLevel, StudyAreaQILT, StudyAreaFaculty, StudyAreaDiscipline, CohortYear, CreditsTotal, CreditsThisYear, CreditsPriorYears, YearOfProgram, StudyMode, CampusType, StudentType, Gender) VALUES (1217,2373769,3,14,5,42,2019,300,50,0,9,0,1,1,1);
+INSERT INTO CR_Student (UniId, Student, StudyLevel, StudyAreaQILT, StudyAreaFaculty, StudyAreaDiscipline, CohortYear, CreditsTotal, CreditsThisYear, CreditsPriorYears, YearOfProgram, StudyMode, CampusType, StudentType, Gender) VALUES (1217,2958680,3,2,2,8,2019,300,50,0,9,0,1,1,1);
+
+
+-- Insert data into CR_Responses
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3437848,'30-10-2019',1,1,01);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3437848,'30-10-2019',2,2,05);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3437848,'30-10-2019',2,3,12);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3437848,'24-10-2020',1,2,04);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3437848,'24-10-2020',2,1,01);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3437848,'24-10-2021',1,3,08);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3437848,'24-10-2021',2,2,02);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3437848,'24-10-2021',2,3,09);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3302519,'15-10-2019',1,4,10);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3302519,'15-10-2019',2,2,04);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3302519,'15-10-2019',2,2,06);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3302519,'15-10-2019',2,3,11);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3302519,'25-10-2019',1,1,01);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3302519,'25-10-2019',2,2,04);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3302519,'25-10-2019',2,2,06);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3302519,'25-10-2019',2,3,11);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3302519,'15-10-2020',1,1,01);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3302519,'15-10-2020',2,2,04);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3302519,'15-10-2020',2,3,11);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3302519,'15-10-2021',1,1,01);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3302519,'15-10-2021',2,1,01);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3302519,'15-10-2022',1,2,05);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3302519,'15-10-2022',2,2,02);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3302519,'15-10-2023',1,3,09);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3302519,'15-10-2023',2,2,02);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3302519,'15-10-2024',1,4,15);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3302519,'15-10-2024',2,1,01);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1387247,'11-06-2019',1,4,10);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1387247,'11-06-2019',2,2,03);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1387247,'01-06-2020',1,4,10);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1387247,'01-06-2020',2,3,08);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1387247,'01-06-2021',1,4,10);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1387247,'01-06-2022',1,4,10);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1387247,'01-06-2022',2,2,04);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1387247,'01-06-2022',2,3,11);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3098330,'16-10-2019',1,1,01);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3098330,'16-10-2019',2,3,07);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3098330,'16-10-2019',2,3,08);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3098330,'16-10-2020',1,2,05);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3098330,'16-10-2020',2,3,07);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3098330,'16-10-2022',1,4,11);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3098330,'16-10-2022',2,2,02);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3098330,'16-10-2022',2,2,05);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3098330,'16-10-2022',2,3,08);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1991307,'02-11-2019',1,1,01);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1991307,'02-11-2020',1,1,01);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1991307,'02-11-2020',2,2,06);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1991307,'02-11-2020',2,4,13);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1991307,'02-11-2021',1,1,01);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1991307,'02-11-2021',2,1,01);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1991307,'02-11-2021',2,2,05);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1991307,'02-11-2021',2,2,06);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1991307,'02-11-2021',2,3,12);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1991307,'02-11-2021',2,4,13);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1991307,'02-11-2022',1,2,04);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1991307,'02-11-2022',2,2,04);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1991307,'02-11-2022',2,3,07);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1991307,'02-11-2023',1,3,09);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1991307,'02-11-2023',2,2,02);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1991307,'02-11-2024',1,4,14);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1991307,'02-11-2024',2,2,02);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1991307,'02-11-2025',1,2,06);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1991307,'02-11-2025',2,3,09);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1991307,'02-11-2026',1,2,06);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1991307,'02-11-2026',2,1,01);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1991307,'02-11-2026',2,3,12);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1991307,'02-11-2026',2,4,13);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1524413,'15-10-2021',1,1,01);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1524413,'15-10-2021',2,2,05);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1524413,'15-10-2021',2,3,12);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1524413,'15-10-2022',1,2,04);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1524413,'15-10-2022',2,2,02);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1524413,'15-10-2022',2,2,03);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1524413,'15-10-2022',2,4,13);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1524413,'15-10-2023',1,3,08);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1524413,'15-10-2023',2,3,09);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1524413,'15-10-2023',2,3,12);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,4342499,'26-11-2019',1,1,01);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,4342499,'26-11-2019',2,1,01);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,4342499,'26-11-2019',2,3,12);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,4342499,'26-11-2019',2,4,13);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,4342499,'26-11-2020',1,1,01);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,4342499,'26-11-2020',2,1,01);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,4342499,'26-11-2021',1,1,01);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,4342499,'26-11-2021',2,2,02);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,4342499,'26-11-2021',2,3,09);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,4342499,'26-11-2022',1,1,01);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,4342499,'26-11-2022',2,2,04);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,4684144,'01-06-2020',1,4,15);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,4684144,'01-06-2020',2,2,02);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,4684144,'01-06-2020',2,3,09);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,4684144,'01-06-2021',1,4,15);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,4684144,'01-06-2021',2,2,02);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,4684144,'01-06-2022',1,2,06);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,4684144,'01-06-2022',2,2,02);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,4684144,'01-06-2023',1,3,09);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,4684144,'01-06-2023',2,3,08);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,4684144,'01-06-2023',2,3,11);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,0324031,'26-11-2022',1,1,01);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,0324031,'26-11-2022',2,2,04);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,0324031,'26-11-2023',1,2,07);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,0324031,'26-11-2023',2,2,04);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,0324031,'26-11-2023',2,3,07);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,0324031,'26-11-2024',1,4,16);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,0324031,'26-11-2024',2,3,09);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,0324031,'26-11-2024',2,3,12);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2673114,'16-10-2019',1,4,10);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2673114,'16-10-2019',2,2,05);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2673114,'16-10-2019',2,3,12);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2673114,'16-10-2020',1,3,08);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2673114,'16-10-2020',2,1,01);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2673114,'16-10-2021',1,2,07);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2673114,'16-10-2021',2,2,02);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2673114,'16-10-2021',2,2,05);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2673114,'16-10-2021',2,3,12);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2673114,'16-10-2023',1,1,03);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2673114,'16-10-2023',2,1,01);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2673114,'16-10-2024',1,3,09);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2673114,'16-10-2024',2,1,01);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3933199,'20-10-2019',1,2,04);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3933199,'20-10-2019',2,3,09);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3933199,'20-10-2020',1,2,04);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3933199,'20-10-2020',2,2,02);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3933199,'20-10-2021',1,3,08);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3933199,'20-10-2021',2,2,02);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3933199,'20-10-2022',1,4,14);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3933199,'20-10-2022',2,2,02);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3933199,'20-10-2022',2,2,06);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3933199,'20-10-2022',2,3,09);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1364506,'24-10-2019',1,2,04);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1364506,'24-10-2019',2,2,02);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1364506,'24-10-2020',1,2,04);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1364506,'24-10-2022',1,3,08);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1364506,'24-10-2022',2,2,04);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1364506,'24-10-2023',1,4,10);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1364506,'24-10-2023',2,1,01);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1364506,'24-10-2024',1,4,10);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1364506,'24-10-2024',2,3,10);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,1364506,'24-10-2024',2,4,13);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2431346,'01-06-2019',1,2,04);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2431346,'01-06-2019',2,2,06);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2431346,'01-06-2019',2,3,12);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2431346,'01-06-2020',1,2,04);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2431346,'01-06-2020',2,2,03);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2431346,'01-06-2020',2,3,10);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2431346,'01-06-2022',1,3,09);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2431346,'01-06-2022',2,2,02);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2431346,'01-06-2023',1,4,16);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2431346,'01-06-2023',2,1,01);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2431346,'01-06-2023',2,3,10);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2431346,'01-06-2023',2,4,13);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2431346,'01-06-2024',1,4,11);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2431346,'01-06-2024',2,1,01);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2431346,'01-06-2025',1,4,14);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2431346,'01-06-2025',2,2,04);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2431346,'01-06-2026',1,4,14);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2431346,'01-06-2026',2,2,05);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2431346,'01-06-2026',2,3,12);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2146646,'15-10-2019',1,2,04);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2146646,'15-10-2019',2,1,01);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2146646,'15-10-2021',1,3,08);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2146646,'15-10-2021',2,2,02);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2146646,'15-10-2023',1,4,15);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2146646,'15-10-2023',2,1,01);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3635688,'01-06-2019',1,2,04);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3635688,'01-06-2019',2,2,03);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3635688,'01-06-2020',1,2,04);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3635688,'01-06-2020',2,1,01);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3635688,'01-06-2020',2,3,08);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3635688,'01-06-2023',1,4,14);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3635688,'01-06-2023',2,2,03);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,4493970,'15-10-2024',1,4,12);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,4493970,'15-10-2026',1,4,15);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,4493970,'15-10-2026',2,1,01);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,4493970,'15-10-2026',2,3,09);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3630889,'02-11-2026',1,1,02);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,3630889,'02-11-2026',2,2,02);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2373769,'10-06-2019',1,1,01);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2373769,'10-06-2019',2,3,08);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2373769,'10-06-2020',1,1,01);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2373769,'10-06-2020',2,1,01);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2373769,'10-06-2026',1,1,01);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2373769,'10-06-2026',2,2,06);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2373769,'10-06-2026',2,3,12);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2958680,'24-10-2019',1,1,01);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2958680,'24-10-2019',2,1,01);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2958680,'24-10-2019',2,2,02);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2958680,'24-10-2019',2,2,03);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2958680,'24-10-2019',2,2,04);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2958680,'24-10-2019',2,2,05);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2958680,'24-10-2019',2,2,06);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2958680,'24-10-2022',1,1,01);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2958680,'24-10-2022',2,2,04);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2958680,'24-10-2026',1,1,01);
+INSERT INTO CR_Responses (UniId, Student, ResponseDate, Ques, Stage, Response) VALUES (1217,2958680,'24-10-2026',2,1,01);
