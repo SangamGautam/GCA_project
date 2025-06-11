@@ -1,0 +1,83 @@
+<div class="container my-5">
+    <h1 class="mb-5 text-center text-primary">Database Frequency Reports</h1>
+  
+    <div class="card shadow mb-5">
+      <div class="card-header bg-primary text-white">
+        <h2>1. Students & Responses</h2>
+      </div>
+      <div class="card-body">
+        <table class="table table-hover">
+          <thead class="thead-light">
+            <tr>
+              <th>Program Year</th>
+              <th>Students</th>
+              <th>Responses</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of data.studentsAndResponses">
+              <td>{{ item.year }}</td>
+              <td>{{ item.students | number }}</td>
+              <td>{{ item.responses }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  
+    <div class="card shadow mb-5">
+      <div class="card-header bg-primary text-white">
+        <h2>2. Career Stages</h2>
+      </div>
+      <div class="card-body">
+        <table class="table table-hover">
+          <thead class="thead-light">
+            <tr>
+              <th>Q1 Stage</th>
+              <th>1st Yr</th>
+              <th>2nd Yr</th>
+              <th>3rd Yr</th>
+              <th>Other</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let stage of data.careerStages">
+              <td>{{ stage.stage }}</td>
+              <td>{{ stage.firstYear }}</td>
+              <td>{{ stage.secondYear }}</td>
+              <td>{{ stage.thirdYear }}</td>
+              <td>{{ stage.other }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  
+    <div class="card shadow">
+      <div class="card-header bg-primary text-white">
+        <h2>3. QILT Study Area Career Stages</h2>
+      </div>
+      <div class="card-body">
+        <table class="table table-hover">
+          <thead class="thead-light">
+            <tr>
+              <th>QILT Study Area</th>
+              <th>Decide</th>
+              <th>Plan</th>
+              <th>Action</th>
+              <th>Sorted</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let area of data.qiltStudyArea">
+              <td>{{ area.area }}</td>
+              <td>{{ area.decide }}</td>
+              <td>{{ area.plan }}</td>
+              <td>{{ area.action }}</td>
+              <td>{{ area.sorted }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+</div>

@@ -1,0 +1,95 @@
+<div class="container mt-5">
+    <h2 class="mb-4">Data Exports</h2>
+    <div class="mb-3">
+      <button class="btn btn-info me-2" (click)="exportToCsv()">Export to CSV</button>
+      <button class="btn btn-danger" (click)="exportToPdf()">Export to PDF</button>
+    </div>
+    <div class="table-responsive">
+      <table class="table table-bordered table-hover">
+        <thead class="thead-light">
+          <tr>
+            <th>UniId</th>
+            <th>Student</th>
+            <th>StudyLevel</th>
+            <th>StudyAreaQILT</th>
+            <th>StudyAreaFaculty</th>
+            <th>StudyAreaDiscipline</th>
+            <th>CohortYear</th>
+            <th>YearOfProgram</th>
+            <th>StudyMode</th>
+            <th>CreditsTotal</th>
+            <th>CreditsThisYear</th>
+            <th>CreditsPriorYears</th>
+            <th>CampusType</th>
+            <th>StudentType</th>
+            <th>Gender</th>
+            <th>UniversityName</th>
+            <th>UniGroupDescription</th>
+            <th>StateDescription</th>
+            <th>StudyLevelDescription</th>
+            <th>StudyAreaQILTDescription</th>
+            <th>StudyAreaFacultyDescription</th>
+            <th>StudyAreaDisciplineDescription</th>
+            <th>YearOfProgramDescription</th>
+            <th>StudyModeDescription</th>
+            <th>CampusTypeDescription</th>
+            <th>StudentTypeDescription</th>
+            <th>GenderDescription</th>
+            <th>Q1Responses</th>
+            <th>Q2Responses</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let student of reportData.students">
+            <td>{{ student.UniId }}</td>
+            <td>{{ student.Student }}</td>
+            <td>{{ student.StudyLevel }}</td>
+            <td>{{ student.StudyAreaQILT }}</td>
+            <td>{{ student.StudyAreaFaculty }}</td>
+            <td>{{ student.StudyAreaDiscipline }}</td>
+            <td>{{ student.CohortYear }}</td>
+            <td>{{ student.YearOfProgram }}</td>
+            <td>{{ student.StudyMode }}</td>
+            <td>{{ student.CreditsTotal }}</td>
+            <td>{{ student.CreditsThisYear }}</td>
+            <td>{{ student.CreditsPriorYears }}</td>
+            <td>{{ student.CampusType }}</td>
+            <td>{{ student.StudentType }}</td>
+            <td>{{ student.Gender }}</td>
+            <td>{{ student.UniversityName }}</td>
+            <td>{{ student.UniGroupDescription }}</td>
+            <td>{{ student.StateDescription }}</td>
+            <td>{{ student.StudyLevelDescription }}</td>
+            <td>{{ student.StudyAreaQILTDescription }}</td>
+            <td>{{ student.StudyAreaFacultyDescription }}</td>
+            <td>{{ student.StudyAreaDisciplineDescription }}</td>
+            <td>{{ student.YearOfProgramDescription }}</td>
+            <td>{{ student.StudyModeDescription }}</td>
+            <td>{{ student.CampusTypeDescription }}</td>
+            <td>{{ student.StudentTypeDescription }}</td>
+            <td>{{ student.GenderDescription }}</td>
+            <td>
+              <ul class="list-unstyled">
+                <li *ngFor="let response of student.Q1Responses">
+                  <strong>Date:</strong> {{ response.ResponseDate }}<br>
+                  <strong>Question:</strong> {{ response.QuestionDescription }}<br>
+                  <strong>Stage:</strong> {{ response.StageDescription }}<br>
+                  <strong>Response:</strong> {{ response.ResponseDescription }}
+                </li>
+              </ul>
+            </td>
+            <td>
+              <ul class="list-unstyled">
+                <li *ngFor="let response of student.Q2Responses">
+                  <strong>Date:</strong> {{ response.ResponseDate }}<br>
+                  <strong>Question:</strong> {{ response.QuestionDescription }}<br>
+                  <strong>Stage:</strong> {{ response.StageDescription }}<br>
+                  <strong>Response:</strong> {{ response.ResponseDescription }}
+                </li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
