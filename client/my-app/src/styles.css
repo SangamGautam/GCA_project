@@ -1,0 +1,16 @@
+/* Importing Bootstrap and Angular Material themes */
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+
+/* Importing custom fonts */
+@font-face {
+  font-family: 'FiraCode';
+  src: url('/assets/fonts/FiraCode-VF.woff2') format('woff2'),
+       url('/assets/fonts/FiraCode-VF.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Global styles */
+html, body { height: 100%; }
+body { margin: 0; font-family: 'FiraCode', Roboto, "Helvetica Neue", sans-serif; }

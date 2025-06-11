@@ -1,0 +1,136 @@
+<div class="reports-menu-container d-flex">
+    <div class="filter-sidebar bg-light">
+        <h4 class="text-center p-3 border-bottom">Filter Selections</h4>
+        <form class="p-3" (ngSubmit)="fetchReports()">
+            <!-- Study Level Dropdown -->
+            <div class="filter-group mb-4">
+                <h6>Study Level</h6>
+                <select class="form-control" [(ngModel)]="filters.studyLevel" name="studyLevel">
+                    <option value="" disabled>Select Study Level</option>
+                    <option value="All">All Study Level</option>
+                    <option value="1">VE (Vocational Education)</option>
+                    <option value="2">Prep (Preparatory)</option>
+                    <option value="3">UGrad (Undergraduate)</option>
+                    <option value="4">PGrad (Postgraduate)</option>
+                    <option value="5">RHD (Research Higher Degree)</option>
+                </select>
+            </div>
+
+            <!-- Student Type -->
+            <div class="filter-group mb-4">
+                <h6>Student Type</h6>
+                <select class="form-control" [(ngModel)]="filters.studentTypes" name="studentTypes">
+                    <option value="" disabled>Select Student Type</option>
+                    <option value="All">All Student Types</option>
+                    <option value="1">Domestic</option>
+                    <option value="2">International</option>
+                </select>
+            </div>
+
+            <!-- QILT Study Area -->
+            <div class="filter-group mb-4">
+                <h6>QILT Study Area</h6>
+                <select class="form-control" [(ngModel)]="filters.studyAreas" name="studyAreas">
+                    <option value="" disabled>Select Study Area</option>
+                    <option value="All">All Study Area</option>
+                    <option value="1">Science and Mathematics</option>
+                    <option value="2">Computing and Information Systems</option>
+                    <option value="3">Engineering</option>
+                    <option value="4">Architecture and Building</option>
+                    <option value="5">Agriculture and Environmental Studies</option>
+                    <option value="6">Health Services and Support</option>
+                    <option value="7">Medicine</option>
+                    <option value="8">Nursing</option>
+                    <option value="9">Pharmacy</option>
+                    <option value="10">Dentistry</option>
+                    <option value="11">Veterinary Science</option>
+                    <option value="12">Rehabilitation</option>
+                    <option value="13">Teacher Education</option>
+                    <option value="14">Business and Management</option>
+                    <option value="15">Humanities; Culture and Social Sciences</option>
+                    <option value="16">Social Work</option>
+                    <option value="17">Psychology</option>
+                    <option value="18">Law and Paralegal Studies</option>
+                    <option value="19">Creative Arts</option>
+                    <option value="20">Communications</option>
+                    <option value="21">Tourism, Hospitality, Personal Services, Sport and Recreation</option>
+                </select>
+            </div>
+            
+            <!-- Study Mode Dropdown -->
+            <div class="filter-group mb-4">
+                <h6>Study Mode</h6>
+                <select class="form-control" [(ngModel)]="filters.studyMode" name="studyMode">
+                    <option value="" disabled>Select Study Mode</option>
+                    <option value="All">All Study Mode</option>
+                    <option value="0">Unknown</option>
+                    <option value="1">Full time</option>
+                    <option value="2">Part time</option>
+                </select>
+            </div>
+
+            <!-- Campus Type Dropdown -->
+            <div class="filter-group mb-4">
+                <h6>Campus Type</h6>
+                <select class="form-control" [(ngModel)]="filters.campusType" name="campusType">
+                    <option value="" disabled>Select Campus Type</option>
+                    <option value="All">All Campus Type</option>
+                    <option value="0">Unknown</option>
+                    <option value="1">Metropolitan</option>
+                    <option value="2">Regional</option>
+                    <option value="3">Offshore</option>
+                </select>
+            </div>
+
+            <!-- Year of Program Dropdown -->
+            <div class="filter-group mb-4">
+                <h6>Year of Program</h6>
+                <select class="form-control" [(ngModel)]="filters.yearOfProgram" name="yearOfProgram">
+                    <option value="" disabled>Select Year of Program</option>
+                    <option value="All">All Year of Program</option>
+                    <option value="0">Unknown</option>
+                    <option value="1">1st Year</option>
+                    <option value="2">2nd Year</option>
+                    <option value="3">3rd Year</option>
+                    <option value="4">Complete</option>
+                    <option value="5">Withdrawn</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Apply Filters</button>
+        </form>
+    </div>
+
+    <!-- Report Content Area -->
+    <div class="report-content flex-grow-1 d-flex flex-column align-items-center">
+        <!-- Report Results Section -->
+        <h4 class="text-center mt-4">Report Results</h4>
+        <div *ngIf="reports.length" class="w-100">
+            <ul>
+                <li *ngFor="let report of reports">{{ report.name }}</li>
+            </ul>
+        </div>
+
+        <!-- Icons for Different Reports -->
+        <div class="d-flex justify-content-center mt-4">
+            <div class="icon-container mx-3">
+                <a (click)="navigateToDashboard('/database-frequency-reports')" class="btn btn-light btn-icon">
+                    <i class="bi bi-table"></i>
+                    <p>Frequency</p>
+                </a>
+            </div>
+            <div class="icon-container mx-3">
+                <a (click)="navigateToDashboard('/data-analysis-reports')" class="btn btn-light btn-icon">
+                    <i class="bi bi-pie-chart-fill"></i>
+                    <p>Data Analysis</p>
+                </a>
+            </div>
+            <div class="icon-container mx-3">
+                <a (click)="navigateToDashboard('/data-exports')" class="btn btn-light btn-icon">
+                    <i class="bi bi-file-earmark-excel-fill"></i>
+                    <p>Data Exports</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
